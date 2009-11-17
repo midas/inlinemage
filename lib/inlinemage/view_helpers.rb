@@ -1,7 +1,7 @@
 module Inlinemage
   module ViewHelpers
     
-    def image_tag( source, options={} )
+    def image_tag( source, options={} )g
        #ActionView::Helpers::AssetTagHelper::image_tag( source, options )
        path = source[0...1] == "/" ? "#{RAILS_ROOT}/public/#{source}" : "#{RAILS_ROOT}/public/images/#{source}"
     
